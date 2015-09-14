@@ -21,7 +21,7 @@ Before running the code, you need to compile the C package, type:
 
 ###Usage:
 ```
-./stress -I INPUTFILE -O OUTPUFDIR -L LOGFILE [-s|--surface] [-i|--interior] [-h|--help]
+./stress -I INPUTFILE -O OUTPUTDIR -L LOGFILE [-s|--surface] [-i|--interior] [-h|--help]
         -I | --input:       followed by the inputfile (pdb file)
         -O | --output:      followed by the output directory
         -L | --logfile:     followed by the logfile
