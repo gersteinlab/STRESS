@@ -1,4 +1,7 @@
-# Run STRESS
+#STRESS
+
+A computationally-efficient framework for identifying potential allosteric residues at the protein surface and within the interior
+
 
 ###Dependency: 
 
