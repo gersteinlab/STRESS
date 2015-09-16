@@ -19,8 +19,8 @@ EXIT_CODE=0
 ### Script paths
 
 # Top level dirs
-CODE_BUNDLE_BL="./code_bundle_BL"
-CODE_BUNDLE_GN="./code_bundle_GN"
+CODE_BUNDLE_BL="./surface_residue"
+CODE_BUNDLE_GN="./interior_residue"
 PYTHONPATH="python"
 PERLPATH="perl"
 

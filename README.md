@@ -11,11 +11,16 @@ Python, Perl, C compiler, MMTK
 
 Before running the code, you need to compile the C package, type:
 				```
-				cd code_bundle_BL/code_pack
+				cd INSTALLFOLDER/surface_residues/code_pack
+
 				make clean
+
 				make
-				cd ../../code_bundle_GN/networkTools
+
+				cd INSTALLFOLDER/interior_residues/networkTools
+
 				make clean
+
 				make
 				```
 
