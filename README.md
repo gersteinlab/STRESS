@@ -10,17 +10,13 @@ Python, Perl, C compiler, MMTK
 ###Configuration: 
 
 Before running the code, you need to compile the C package, type:
+
 				```
 				cd INSTALLFOLDER/surface_residues/code_pack
-
 				make clean
-
 				make
-
 				cd INSTALLFOLDER/interior_residues/networkTools
-
 				make clean
-
 				make
 				```
 
