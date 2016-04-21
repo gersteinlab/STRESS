@@ -104,10 +104,10 @@ while i < len(mappings_lines):  ## we're disregarding the last line in the
         bl_line_index = BL_index___2___BL_line_index[bl_index]
         if bl_line_index < (  len(BL_dat_lines) - 1  ): ## ie, if we're not at the very last line in *BL.dat
             delta_BL_i = BL_line_index___2___BL_score[bl_line_index] - BL_line_index___2___BL_score[bl_line_index+1]
-			if DELTA_BL != 0:
-				ratio_i = delta_BL_i / DELTA_BL
-			else:
-				ratio_i = 0
+            if DELTA_BL != 0:
+                ratio_i = delta_BL_i / DELTA_BL
+            else:
+                ratio_i = 0
             ratios.append(ratio_i)
             #print "ratio  " + str(i) + "  " + str(ratio_i)
             #print "ratio  " + str(ln_elems[1]) + "  " + str(ratio_i)
