@@ -1,13 +1,14 @@
-#STRESS
+# STRESS
 
 A computationally-efficient framework for identifying potential allosteric residues at the protein surface and within the interior
 
+*The original stress server on AWS is currently down due to AWS settings udpdates. We apologize for the inconvenience* 
 
-###Dependency: 
+### Dependency: 
 
 Python, Perl, C compiler, MMTK
 
-###Configuration: 
+### Configuration: 
 
 Before running the code, you need to compile the C package, type:
 
@@ -20,7 +21,7 @@ Before running the code, you need to compile the C package, type:
 				make
 				```
 
-###Usage:
+### Usage:
 ```
 ./stress -I INPUTFILE -O OUTPUTDIR -L LOGFILE [-s|--surface] [-i|--interior] [-h|--help]
         -I | --input:       followed by the inputfile (pdb file)
@@ -35,9 +36,9 @@ To run the program, you have to at least choose one of surface/interior modules,
 
 For detailed description of the two modules, please see below.
 
-##Identifying Surface-Critical Residues
+## Identifying Surface-Critical Residues
 
-###Overview
+### Overview
 Inspired by the binding leverage framework first introduced by Mitternacht and Berezovsky in 2011, 
 this module efficiently identifies pockets on the protein surface such that their occlusion with 
 small ligands is predicted to drastically affect conformational change – such surface sites are 
@@ -60,7 +61,7 @@ row corresponds to a particular allosteric surface site, and columns contain the
 
 
 
-###Notes
+### Notes
 	
 	1. If you have any difficulty generating any of the output files, output files for this example 
 	are stored in the directory ./output_files/
@@ -68,7 +69,7 @@ row corresponds to a particular allosteric surface site, and columns contain the
 	asymmetric unit).
 
 
-###Changes to Original Code
+### Changes to Original Code
 An earlier version of this code was developed by Anurag Sethi and John Eargle of the Luthey-Schulten 
 Group at The University of Illinois at Urbana-Champaign (see information in code headers). Extensive 
 modifications have been introduduced by Shantao Li and Declan Clarke of the Gerstein Lab at Yale 
@@ -82,9 +83,9 @@ University. A few of the most notable modifications now integrated into the new 
 	5. For the purpose of optimizing efficiency: revised data structure, workflow and cut back on some 
 	   expensive operations such as square root.
 
-##Identifying Interior-Critical Residues
+## Identifying Interior-Critical Residues
 
-###Overview
+### Overview
 Allosteric residues within the protein interior often function as essential communication ‘bottlenecks’ 
 between distinct regions. To identify such bottleneck residues, this computationally efficient module 
 represents a protein structure as a  network of interacting residues, and simultaneously incorporates 
@@ -101,7 +102,7 @@ has the following format:
 
 
 
-###NOTES
+### NOTES
 	1. If you have any difficulty generating any of the output files, output files for this example 
 	are stored in the directory ./output_files/
 	
