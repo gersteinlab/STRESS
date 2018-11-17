@@ -4,6 +4,12 @@ A computationally-efficient framework for identifying potential allosteric resid
 
 *The original stress server on AWS is currently down due to AWS settings udpdates. We apologize for the inconvenience* 
 
+### Note about potential security vulnerability:
+The current version of this server has a security vulnerability. This vulnerability, which is in the rack module, has been classified by GitHub as a moderate severity security vulnerability. More information can be found here:
+https://nvd.nist.gov/vuln/detail/CVE-2018-16471
+and also here:
+https://nvd.nist.gov/vuln/detail/CVE-2015-3225
+
 ### Dependency: 
 
 Python, Perl, C compiler, MMTK
